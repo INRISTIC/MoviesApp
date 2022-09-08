@@ -1,1 +1,1 @@
-https://movies-sandy.vercel.app/
+https://movies-app-eight-iota.vercel.app/
