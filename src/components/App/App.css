@@ -1,0 +1,159 @@
+.container {
+    padding: 16px 32px;
+    background: #FFFFFF;
+    max-width: 1010px;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+
+  .backround {
+    background: #FFFFFF;
+  }
+
+  .example {
+    text-align: center;
+    height: 416px;
+  }
+  .buttons {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search {
+    width: 100%;
+  }
+  
+  .itemFilms {
+    display: flex;
+    width: 454px;
+    height: 281px;
+    box-shadow: 0px 0px 12px 1px rgba(34, 60, 80, 0.2);
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: 990px ) {
+    .itemFilms {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .itemFilmsInformation {
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 990px ) {
+    .itemFilmsInformation {
+      width: 100%;
+    }
+  }
+  
+  .listFilms {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media (max-width: 990px ) {
+    .listFilms {
+      display: block;
+    }
+  }
+
+  .titleFilm {
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-bottom: 7px;
+    width: 210px;
+  }
+  @media (max-width: 500px ) {
+    .titleFilm {
+      margin-bottom: 7px;
+      margin-left: 70px;
+    }
+  }
+
+  .dateFilm {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #827E7E;
+    margin-bottom: 7px;
+  }
+  @media (max-width:500px ) {
+    .dateFilm {
+      margin-bottom: 7px;
+      margin-left: 70px;
+    }
+  }
+
+  .genresList {
+    display: flex;
+    margin-bottom: 7px;
+    flex-wrap: wrap
+  }
+  @media (max-width: 500px ) {
+    .genresList {
+      margin-bottom: 19px;
+      margin-left: 70px;
+    }
+  }
+
+  .genresItem {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.65);
+    background: #FAFAFA;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    padding: 2px 3px;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+  
+  .genresItem:last-child {
+    margin-right: 0;
+  }
+  
+  .descriptonFilm {
+    font-size: 12px;
+    line-height: 22px;
+    color: #000000;
+  }
+
+  img {
+    width: 160px;
+    height: 243px;
+    object-fit: cover;
+  }
+  @media (max-width: 500px ) {
+    img {
+      width: 79px;
+      height: 117px;
+      object-fit: cover;
+      margin-top: 6px;
+      margin-left: 10px;
+      position: absolute;
+    }
+  }
+  
+  .ant-layout {
+    background: none;
+  }

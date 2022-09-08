@@ -1,0 +1,36 @@
+.card-popularity-count {
+    display: flex;
+    border: 3px solid #E90000;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+}
+
+.card-popularity-count.orange {
+    border-color: #E97E00;
+}
+
+.card-popularity-count.yellow {
+    border-color: #E9D100;
+}
+
+.card-popularity-count.green {
+    border-color: #66E900;
+}
+
+ul.ant-rate {
+    font-size: 15px;
+    margin-top: auto;
+    align-self: flex-end;
+}
+
+.headerItem {
+    display: flex;
+    justify-content: space-between;
+}
+

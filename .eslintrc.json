@@ -1,0 +1,66 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "ignorePatterns": ["node_modules", "dist", "build"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb", "plugin:prettier/recommended", "plugin:import/errors", "plugin:import/warnings"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
+  },
+  "parser": "@babel/eslint-parser",
+  "plugins": ["react", "prettier", "import"],
+  "rules": {
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "prettier/prettier": "error",
+    "linebreak-style": [0, "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "max-len": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-return-await": "off",
+    "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
+    "object-curly-newline": "off",
+    "no-return-assign": "off",
+    "no-cond-assign": "off",
+    "comma-dangle": "off",
+    "no-console": "off",
+    "react/state-in-constructor": "off",
+    "react/destructuring-assignment": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/sort-comp": "off",
+    "react/jsx-no-constructed-context-values": "off",
+    "no-shadow": ["error", { "allow": ["todoData"] }],
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": 0,
+    "import/no-unresolved": [2, { "caseSensitive": false }],
+    "react/function-component-definition": [2, { "namedComponents": ["function-expression" , "arrow-function", "function-declaration"] }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/order": [
+      2,
+      {
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],
+        "newlines-between": "always"
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  }
+}
